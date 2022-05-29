@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heght-navbar: 5rem;
+}
+
+body {
+    font-family: 'Raleway',
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Barra de Navegacion*/
+
+.navbar {
+    height: var(--heght-navbar) !important;
+    width: 100%;
+    background-color: #E6E6E6FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 2rem 8rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.navbar::before {
+    content: " ";
+    height: 30px;
+    width: 100%;
+    background-color: rgb(127, 51, 70);
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+}
+
+.menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu>ul>li {
+    list-style: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.menu>ul>li>a {
+    color: #000;
+
+}
+
+.menu>ul>li>span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #632534FF;
+}
+
+.logo>h2 {
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.logo>h2>span {
+    color: #632534FF;
+}
+
+/*utilidades*/
+
+.btn-vale {
+    background-color: #632534FF;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+/*hero-img*/
+
+.hero-img {
+    height: 55rem;
+    width: 100%;
+    background: url("../img/hero-img.jpg") no-repeat center / cover;
+    position: relative;
+}
+
+.hero-img-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.433);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img-container img {
+    width: 17rem;
+}
